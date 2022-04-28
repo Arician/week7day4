@@ -12,13 +12,13 @@ const app=async(yargsObj)=>{
             console.log(`Successfully added ${yargsObj.title}`)
         }else if(yargsObj.list){
             // list movie function
-            if (yargsObj.list=="title"){
+            if (yargsObj.query=="title"){
                 await getAnime({title:yargsObj.title})
-            }else if(yargsObj.list=="protag"){
+            }else if(yargsObj.query=="protag"){
                 await getAnime({protag:yargsObj.protag})
-            }else if(yargsObj.list=="protagVA"){
+            }else if(yargsObj.query=="protagVA"){
                 await getAnime({protagVA:yargsObj.protagVA})
-            }else if(yargsObj.list=="studio"){
+            }else if(yargsObj.query=="studio"){
                 await getAnime({studio:yargsObj.studio})
             }else if(yargsObj.query==undefined){
                 await getAnime()
