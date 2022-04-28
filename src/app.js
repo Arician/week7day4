@@ -42,7 +42,7 @@ const app=async(yargsObj)=>{
             }
         }else if(yargsObj.delete){
             // delete movie function by title, might try to find update
-            if (yargsObj.query=="title"){
+            if (yargsObj.query=="title"||yargsObj.query==undefined){
                 await deleteAnime({title:yargsObj.title})
                 console.log(`Successfully deleted ${yargsObj.title}`)
             }else if(yargsObj.query=="protag"){
