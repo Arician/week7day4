@@ -10,6 +10,7 @@ exports.addAnime=async(animeObj)=>{
 exports.deleteAnime=async(animeObj)=>{
     try{
         const deleted = await Anime.deleteMany(animeObj)
+        console.log(deleted)
     }catch(err){console.log(err);}
 }
 exports.getAnime=async(animeObj)=>{
