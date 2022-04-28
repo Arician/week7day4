@@ -3,12 +3,6 @@ const yargs = require('yargs');
 const mongoose = require('mongoose');
 const {addAnime,deleteAnime,getAnime,updateAnime} = require('./movie/methods')
 
-let queryKey={
-    "title":title,
-    "protag":protag,
-    "protagVA":protagVA,
-    "studio":studio,
-}
 
 const app=async(yargsObj)=>{
     try{
