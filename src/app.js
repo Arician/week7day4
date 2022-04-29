@@ -2,13 +2,7 @@ require('./db/connection');
 const yargs = require('yargs');
 const mongoose = require('mongoose');
 const {addAnime,deleteAnime,getAnime,updateAnime} = require('./movie/methods')
-
-queryKey={
-    title: 'title',
-    protag:'protag',
-    protagVA:'protagVA',
-    studio:'studio',
-}
+const {queryKey}=require('./utils/querykey')
 
 const app=async(yargsObj)=>{
     try{
